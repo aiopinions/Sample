@@ -1,8 +1,11 @@
 body {
   font-size: 48px;
   display: flex;
-  align-items: space-evenly;
+  align-items: center; /* Center alignment is more appropriate */
   justify-content: space-evenly;
   background-color: #112692;
+  margin: 0; /* Remove default margin for consistency */
+  padding: 0; /* Remove default padding for consistency */
+  color: #ffffff; /* Add default text color for better contrast */
+  font-family: Arial, sans-serif; /* Add a default font family */
 }
-
