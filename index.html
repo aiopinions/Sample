@@ -1,15 +1,25 @@
 <!Doctype html>
 <html lang='en'>
     <head>
-      <meta charset='utf-8'>
-      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-      <title>solana copy trading bot</title>
-      <link rel='text/css' href="./static/css/globals.css">
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>solana copy trading bot</title>
+        <link rel='text/css' href="./static/css/globals.css">
     </head>
     <body>
-      <div id='sample_root'>
-<!--            -->
-      </div>
-        <script src="./src/index.js"></script>
+        <div id='sample_root'>
+            <!--            -->
+        </div>
+        <script>
+            const sample_root = document.getElementById('sample_root');
+            sample_root.addEventListener('load', () => {
+                console.log('page is loaded');
+            });
+            const loginbtn = document.createElement('button');
+            loginbtn.addEventListener('click', () => {
+                window.href('/ello');
+            }
+            sample_root.appendChild(loginbtn);
+        </script>
     </body>
   </html>
