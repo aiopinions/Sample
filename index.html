@@ -16,6 +16,12 @@
                 color: #ffffff; /* Add default text color for better contrast */
                 font-family: Arial, sans-serif; /* Add a default font family */
             }
+            h1 {
+                padding: 10px 20px;
+                margin: 10px;
+                color: #abcdef;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
@@ -27,9 +33,14 @@
             sample_root.addEventListener('load', () => {
                 console.log('page is loaded');
             });
+
+            // heading for the app
+            const titleHeading = document.createElement('h1');
+            titleHeading.textContent = 'solana copy trading bot'.toUpperCase();
+            sample_root.append(titleHeading);
             const loginbtn = document.createElement('button');
             loginbtn.addEventListener('click', () => {
-                window.href('/ello');
+                window.location.href('/ello');
             });
             sample_root.appendChild(loginbtn);
         </script>
