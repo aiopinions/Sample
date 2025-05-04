@@ -33,14 +33,16 @@
             sample_root.addEventListener('load', () => {
                 console.log('page is loaded');
             });
-
+            // create login/signup button
+            const loginrsignupbtn = document.createElement('button');
+            loginrsignupbtn.textContent = 'login';
             // heading for the app
             const titleHeading = document.createElement('h1');
             titleHeading.textContent = 'solana copy trading bot'.toUpperCase();
             sample_root.append(titleHeading);
             const loginbtn = document.createElement('button');
             loginbtn.addEventListener('click', () => {
-                window.location.href('/ello');
+                window.location.href = '/ello';
             });
             sample_root.appendChild(loginbtn);
         </script>
